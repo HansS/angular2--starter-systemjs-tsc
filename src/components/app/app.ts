@@ -4,7 +4,7 @@ import {bootstrap} from 'angular2/platform/browser';
 @Component({
   selector: 'hs-app',
   providers: [],
-  template: '<div>{{title}}</div>',
+  templateUrl: 'dist/components/app/app.html',
   styleUrls: [],
   directives: [],
   pipes: []
@@ -12,7 +12,7 @@ import {bootstrap} from 'angular2/platform/browser';
 
 export class HsApp implements OnInit  {
 
-    title: string = "Hans im Glück!!!!"
+    title: string = "Hans from App Component";
     
     constructor() { }
 

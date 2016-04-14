@@ -12,7 +12,7 @@ var core_1 = require('angular2/core');
 var browser_1 = require('angular2/platform/browser');
 var HsApp = (function () {
     function HsApp() {
-        this.title = "Hans im Glück!!!!";
+        this.title = "Hans from App Component";
     }
     HsApp.prototype.ngOnInit = function () { console.log('ngOnInit'); };
     HsApp.prototype.ngOnDestroy = function () { console.log('ngOnDestroy'); };
@@ -20,7 +20,7 @@ var HsApp = (function () {
         core_1.Component({
             selector: 'hs-app',
             providers: [],
-            template: '<div>{{title}}</div>',
+            templateUrl: 'dist/components/app/app.html',
             styleUrls: [],
             directives: [],
             pipes: []
@@ -31,4 +31,4 @@ var HsApp = (function () {
 }());
 exports.HsApp = HsApp;
 browser_1.bootstrap(HsApp);
-//# sourceMappingURL=main.js.map
+//# sourceMappingURL=app.js.map

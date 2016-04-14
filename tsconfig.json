@@ -6,10 +6,11 @@
         "sourceMap": true,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
+        "rootDir": "src",
         "outDir": "dist"
     },
     "files": [
-                "src/main.ts",
+        "src/components/app/app.ts",
         "typings/browser.d.ts"
 
     ]
