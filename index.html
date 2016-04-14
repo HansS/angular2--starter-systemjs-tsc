@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Typescript and SystemJs</title>
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script>
+        System.config({
+            map:{
+                app: 'dist',
+                angular2: 'node_modules/angular2',
+                rxjs: 'node_modules/rxjs'
+            },
+            packages: {
+                app :{
+                    main: 'main.js',
+                    defaultExtension: 'js'
+                },
+                angular2: {
+                    defaultExtension: 'js'
+                },
+                rxjs: {
+                    defaultExtension: 'js'
+                }
+            }
+        });
+        
+        System.import('app').then(function(m){
+           console.log(m); 
+        });
+        
+    </script>
+</head>
+<body>
+    <h3>Typescript and SystemJs</h3>
+    <p>Some text goes here</p>
+    <hs-app></hs-app>
+</body>
+</html>
